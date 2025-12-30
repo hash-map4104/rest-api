@@ -5,7 +5,7 @@ IF ANYONE INTERESTED CAN HELP WITH THE FRONTEND PART
 
 A backend REST API built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**, following best practices for authentication, database migrations, and API design.
 
-This project is inspired by the **freeCodeCamp Python API Development course** and focuses purely on backend development.
+
 
 ---
 
