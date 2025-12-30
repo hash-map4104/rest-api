@@ -29,7 +29,7 @@ This project is inspired by the **freeCodeCamp Python API Development course** a
 - **ORM:** SQLAlchemy  
 - **Migrations:** Alembic  
 - **Authentication:** OAuth2 + JWT  
-- **Password Hashing:** Passlib (bcrypt)  
+- **Password Hashing:** argon2  
 - **Server:** Uvicorn  
 
 ---
