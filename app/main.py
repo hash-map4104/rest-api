@@ -7,6 +7,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 
+from alembic import command
+from alembic.config import Config
+import os
+
+alembic_cfg = Config("alembic.ini")
+command.upgrade(alembic_cfg, "head")
+
+
 
 # ---------------------------------------------------------------
 # Create tables if not already created
