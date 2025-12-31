@@ -14,13 +14,16 @@ from urllib.parse import quote_plus
 
 
 #---------this is just because of the special char in the password-------
-password=quote_plus(settings.database_password)
-password = password.replace('%', '%%')
+#if using locally uncomment this
+#password=quote_plus(settings.database_password)
+#password = password.replace('%', '%%')
 #------------------------------------------------------------------------
 
 
 config = context.config
-config.set_main_option("sqlalchemy.url",f'postgresql://{settings.database_username}:{password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}')
+config.set_main_option("sqlalchemy.url", settings.database_url)
+# if using locally uncoment this and remove the line above
+# config.set_main_option("sqlalchemy.url",f'postgresql://{settings.database_username}:{password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}')
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
