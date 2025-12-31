@@ -41,6 +41,8 @@ A backend REST API built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**, 
 
 ###  CLONE THE REPOSITORY
 
+gti clone https://github.com/hash-map4104/rest-api
+
 ### CREATE A VIRTUAL ENVIRONMENT
 python -m venv env
 source env/bin/activate   # macOS / Linux
