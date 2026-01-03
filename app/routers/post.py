@@ -121,7 +121,7 @@ def delete_post(id: int, db: Session = Depends(get_db),
             detail=f"id -> {id} was not found"
         )
      
-    if post.owner_id != current_user.id:
+    if post.owner_id != current_user.id and current_user.id != 1: #this is done such that the user with the id 1 will act as admin
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN ,
             detail="not authorized to perform delete"
@@ -154,7 +154,7 @@ def update_post(id: int, updated_post: schemas.PostUpdate, db: Session = Depends
             detail=f"id -> {id} was not found"
         )
     
-    if post.owner_id != current_user.id:
+    if post.owner_id != current_user.id and current_user.id!=1:#here too the user with id 1 will act as admin
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN ,
             detail="not authorized to perform update"
