@@ -1,4 +1,4 @@
-# REST API using FastAPI 🚀
+# REST API using FastAPI 
 
 **IF ANYONE INTERESTED CAN HELP WITH THE FRONTEND PART**
 
@@ -9,7 +9,7 @@ A backend REST API built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**,*
 
 ---
 
-## 📌 Features
+##  Features
 
 - User authentication using **JWT (OAuth2)**
 - Secure password hashing
@@ -22,7 +22,7 @@ A backend REST API built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**,*
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend Framework:** FastAPI  
 - **Database:** PostgreSQL  
