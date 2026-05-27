@@ -78,4 +78,6 @@ Once the server is running, interactive API docs are available at:
 - Write unit and integration tests
 - Dockerize the application
 - Add CI/CD pipeline
-- Deploy to a cloud platform
+
+
+The project was successfully deployed previously. The current live deployment is inactive because the hosting subscription has expired, but the codebase, database setup, and local run instructions remain fully functional.
