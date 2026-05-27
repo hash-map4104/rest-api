@@ -1,59 +1,52 @@
-# REST API using FastAPI 
+# REST API using FastAPI
 
-**IF ANYONE INTERESTED CAN HELP WITH THE FRONTEND PART**
+A backend REST API built with **FastAPI**, **PostgreSQL**, **SQLAlchemy**, and **Alembic**, following backend best practices for authentication, database migrations, and scalable API design.
 
-
-A backend REST API built using **FastAPI**, **PostgreSQL**, and **SQLAlchemy**,**Alembic** following best practices for authentication, database migrations, and API design.
-
-
-
----
-
-##  Features
-
-- User authentication using **JWT (OAuth2)**
-- Secure password hashing
+## Features
+- User authentication using OAuth2 with JWT tokens
+- Secure password hashing with Argon2
 - CRUD operations for posts
-- Voting system (like / unlike posts)
+- Voting system for liking and unliking posts
 - PostgreSQL database integration
-- Database migrations using **Alembic**
-- Environment-based configuration
-- Auto-generated API documentation (Swagger UI)
-
----
+- Database schema migrations with Alembic
+- Environment-based configuration using `.env`
+- Auto-generated API documentation with Swagger UI
 
 ## Tech Stack
+- **Backend Framework:** FastAPI
+- **Database:** PostgreSQL
+- **ORM:** SQLAlchemy
+- **Migrations:** Alembic
+- **Authentication:** OAuth2 + JWT
+- **Password Hashing:** Argon2
+- **Server:** Uvicorn
 
-- **Backend Framework:** FastAPI  
-- **Database:** PostgreSQL  
-- **ORM:** SQLAlchemy  
-- **Migrations:** Alembic  
-- **Authentication:** OAuth2 + JWT  
-- **Password Hashing:** argon2  
-- **Server:** Uvicorn  
+## Setup Instructions
 
----
-
-
----
-
-####### SETUP INSTRUCTIONS->
-
-###  CLONE THE REPOSITORY
-
+### 1. Clone the repository
+```bash
 git clone https://github.com/hash-map4104/rest-api
+cd rest-api
+```
 
-### CREATE A VIRTUAL ENVIRONMENT
+### 2. Create and activate a virtual environment
+```bash
 python -m venv env
-source env/bin/activate   # macOS / Linux
-env\Scripts\activate      # Windows
+source env/bin/activate
+```
 
+For Windows:
+```bash
+env\Scripts\activate
+```
 
-### INSTALL DEPENDENCIES
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-
-### CREATE A .env FILE
+### 4. Create a `.env` file
+```env
 DATABASE_HOSTNAME=localhost
 DATABASE_PORT=5432
 DATABASE_USERNAME=postgres
@@ -62,8 +55,27 @@ DATABASE_NAME=your_db_name
 SECRET_KEY=your_secret_key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
+```
 
+### 5. Run database migrations
+```bash
+alembic upgrade head
+```
 
+### 6. Start the server
+```bash
+uvicorn app.main:app --reload
+```
 
+## API Documentation
+Once the server is running, interactive API docs are available at:
 
+- Swagger UI: `/docs`
+- ReDoc: `/redoc`
 
+## Future Improvements
+- Add a frontend client
+- Write unit and integration tests
+- Dockerize the application
+- Add CI/CD pipeline
+- Deploy to a cloud platform
