@@ -79,5 +79,8 @@ Once the server is running, interactive API docs are available at:
 - Dockerize the application
 - Add CI/CD pipeline
 
+### 🎥 Video Demonstration
+[Click here to watch the Votely-API walkthrough]([https://your-google-drive-link-here](https://drive.google.com/drive/folders/1hehA0sAKQKY10NSSPh6q70-5xs6IH8ob))
+
 
 The project was successfully deployed previously. The current live deployment is inactive because the hosting subscription has expired, but the codebase, database setup, and local run instructions remain fully functional.
