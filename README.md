@@ -80,7 +80,7 @@ Once the server is running, interactive API docs are available at:
 - Add CI/CD pipeline
 
 ### 🎥 Video Demonstration
-[Click here to watch the Votely-API walkthrough]([https://your-google-drive-link-here](https://drive.google.com/drive/folders/1hehA0sAKQKY10NSSPh6q70-5xs6IH8ob))
+[Click here to watch the Votely-API walkthrough](https://drive.google.com/file/d/1jPyu3v-nDBsKyTC2fD8T_s_OTcgML-K0/view?usp=drive_link)
 
 
 The project was successfully deployed previously. The current live deployment is inactive because the hosting subscription has expired, but the codebase, database setup, and local run instructions remain fully functional.
